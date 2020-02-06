@@ -51,6 +51,7 @@ class Focus {
                 if (parseInt("0x" + port.productId) == device.usb.productId &&
                     parseInt("0x" + port.vendorId) == device.usb.vendorId) {
                     let newPort = Object.assign({}, port)
+                    newPort.comName = newPort.path
                     newPort.device = device
                     found_devices.push(newPort)
                 }
