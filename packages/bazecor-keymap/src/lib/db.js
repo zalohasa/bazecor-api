@@ -41,6 +41,7 @@ import NumpadTable, {
 import FunctionKeyTable, {
     ModifiedFunctionKeyTables
 } from "./db/fxs"
+import LiveMacrosTable from "./db/livemacros"
 
 import MediaControlTable from "./db/mediacontrols"
 import {
@@ -98,6 +99,7 @@ const defaultBaseKeyCodeTable = [
     MouseButtonTable,
     MouseWheelTable,
     MouseWarpTable,
+    LiveMacrosTable,
 
     OneShotModifierTable,
     OneShotLayerTable,
